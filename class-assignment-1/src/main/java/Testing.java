@@ -16,7 +16,7 @@ public class Testing {
         int num1 = random.nextInt(1,20);
         int num2 = random.nextInt(1, 5);
 
-        System.out.println("what is the sum of "+num1 +" and "+ num2);
+        System.out.println(num1 +" + "+ num2);
         int sum = num1 + num2;
         int userSum = scanner.nextInt();
         if (userSum == sum){
@@ -25,7 +25,7 @@ public class Testing {
             System.out.println( userSum + " is a wrong answer. The correct answer is " + sum);
         }
 
-        System.out.println("what is the difference between "+num1 + " and "+num2);
+        System.out.println(num1 + " - " +num2);
         int subtract = num1 - num2;
         int userSubtract = scanner.nextInt();
         if (userSubtract == subtract){
@@ -33,7 +33,7 @@ public class Testing {
         } else {
             System.out.println(userSubtract + " is a wrong answer. The correct answer is " + subtract);
         }
-        System.out.println("what is the product of "+num1 + " and " +num2);
+        System.out.println(num1 + " * " +num2);
         int product = num1 * num2;
         int userProduct = scanner.nextInt();
         if (userProduct == product){
@@ -41,7 +41,7 @@ public class Testing {
         } else {
             System.out.println(userProduct + "is a wrong answer. The correct answer is " + product);
         }
-        System.out.println("Divide " + num1 + " by " +num2);
+        System.out.println(num1 + " / " +num2);
         int divide = num1 / num2;
         int userDivide = scanner.nextInt();
         if (userDivide == divide){
