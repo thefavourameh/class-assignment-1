@@ -16,7 +16,11 @@ public class Testing {
         int num1 = random.nextInt(1,20);
         int num2 = random.nextInt(1, 5);
 
-        System.out.println(num1 +" + "+ num2);
+
+        num1 = random.nextInt(1,20);
+        num2 = random.nextInt(1, 5);
+
+        System.out.println("Solve " + num1 +" + "+ num2 + " :");
         int sum = num1 + num2;
         int userSum = scanner.nextInt();
         if (userSum == sum){
@@ -25,7 +29,10 @@ public class Testing {
             System.out.println( userSum + " is a wrong answer. The correct answer is " + sum);
         }
 
-        System.out.println(num1 + " - " +num2);
+
+        num1 = random.nextInt(1,20);
+        num2 = random.nextInt(1, 5);
+        System.out.println("Solve " + num1 + " - " + num2 + " :");
         int subtract = num1 - num2;
         int userSubtract = scanner.nextInt();
         if (userSubtract == subtract){
@@ -33,24 +40,41 @@ public class Testing {
         } else {
             System.out.println(userSubtract + " is a wrong answer. The correct answer is " + subtract);
         }
-        System.out.println(num1 + " * " +num2);
+
+
+
+
+        num1 = random.nextInt(1,20);
+        num2 = random.nextInt(1, 5);
+        System.out.println("Solve " + num1 + " * " +num2 + " :");
         int product = num1 * num2;
         int userProduct = scanner.nextInt();
         if (userProduct == product){
             score++;
         } else {
-            System.out.println(userProduct + "is a wrong answer. The correct answer is " + product);
-        }
-        System.out.println(num1 + " / " +num2);
-        int divide = num1 / num2;
-        int userDivide = scanner.nextInt();
-        if (userDivide == divide){
-            score++;
-        } else {
-            System.out.println(userDivide + "is a wrong answer. The correct answer is " + divide);
-        }
-        System.out.println(" Your score is " + score);
+            System.out.println(userProduct + " is a wrong answer. The correct answer is " + product);
         }
 
+
+        num1 = random.nextInt(1,20);
+        num2 = random.nextInt(1, 5);
+        System.out.println( "Solve " + num1 + " / " + num2 + " :");
+        int divide = num1 / num2;
+        int userDivide = scanner.nextInt();
+        if (userDivide == divide) {
+                score++;
+        } else {
+                System.out.println(userDivide + " is a wrong answer. The correct answer is " + divide);
+            }
+        System.out.println(" Your score is " + score + "/4");
+
+    if (score >=4){
+            System.out.println("Amazing! You did great " + fullName);
+        } else if (score >=2) {
+            System.out.println("Nice try!");
+        } else {
+            System.out.println("Better luck next time");
+        }
+    }
     }
 
